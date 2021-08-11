@@ -45,9 +45,11 @@ Use the copy function below to do the following:
   2. Return a copy of the received array  
 */
 
-function copy( ){
-  
-}    
+function copy(array){
+    return array
+  }    
+
+console.log('task 1', copy(originalFlavors))
 
 
 
@@ -64,9 +66,27 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
- /*your code here*/
+
+
+
+
+
+function is31Flavors(){
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -81,9 +101,21 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
- /*your code here*/
+
+
+function addFlavor(array){
+  array.unshift();
+  return array
 }
+
+
+console.log('task 3', addFlavor(originalFlavors,'Rainbow Sherbert'))
+
+
+
+
+
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -97,10 +129,21 @@ Use the removeLastFlavor function below to do the following:
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
+
+
 function removeLastFlavor(array){
- return array.pop();
+  const newArray = array.pop();
+  return array
 }
+
+
+
 console.log('task 4', removeLastFlavor(originalFlavors));
+
+
+
+
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -141,6 +184,11 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
+
+
+
+
+
 function removeFlavorByName(array, flavor){
   for(let i = 0; i < array.length; i++){
     if(array[i] === flavor)
@@ -149,6 +197,11 @@ function removeFlavorByName(array, flavor){
   return array
 }
 console.log('task 6', removeFlavorByName(originalFlavors, "Rocky Road"))
+
+
+
+
+
 
 
 
@@ -173,6 +226,8 @@ Use the filterByWord function below to do the following:
 */
 
 
+
+
 function filterByWord(array, string){
   const filteredArray = [];
   for(let i =0; i < array.length; i++){
@@ -184,6 +239,7 @@ function filterByWord(array, string){
 }
 
 console.log('task 7', filterByWord(originalFlavors, 'Chocolate'));
+
 
 
 
